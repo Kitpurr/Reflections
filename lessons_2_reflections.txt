@@ -1,0 +1,8 @@
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area allows you to only commit what could reasonably be thought of as one change.
+It allows you to control what is added to a commit.
+
+A working directory shows you what is in your repository as well as what is in the staging area and will therefore be submitted on the next comit.
+
+The repository is your collection of commits.
