@@ -1,0 +1,25 @@
+Version Control Systems or VCS enable programmers to easily check their code for bugs or revert to earlier versions of code when changes are required.
+This enables Programmers to save vast amounts of time combing through code looking for changes.
+CMD has a way of checking through code to find changes to it.  The command is 'FC' for find changes.
+To find a change using the FC command you point CMD at the right directory by calling the 'CD' or Change Directory command such as 'CD C:\Documents and Settings\Users\Kit\Desktop\FilesToCheck' then you place the FC command and the two file names.
+Once this is done CMD will run the check and output the results including the lines that have changed.
+Linux and Max have a similar function but it is called Diff. GIt Because it is built by the same person who built Linux uses Diff
+
+How could having the entire history of a file make you more efficient as a programmer?
+
+You could easily find issues with newer versions of code
+You could change direction of a project quickly and efficiently
+You could learn the core concepts of a part of the code when it is newly written and before other parts of the code start to interact with it and increase its complexity.
+
+What do you think the pros and cons of manually choosing when to create a commit like you do in Git, vs having versions automatically saved, Like Google Docs does?
+
+In skilled hands choosing when to save manually will make the saved files orderly and easy to navigate.  
+Automatic saving, while it may stop the lazy or forgetful from losing some work may increase the time on a project due to all the extra time taken to navigate different changes when there is no logical flow to them, and to clean up different parts of the saves so that versions will actually compile and run correctly.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file seperately?
+
+Some changes to coding require changes across all files for instance adding something in a HTML doc might also require a rule in the CSS file to style it.  Because it makes the most sense to make a commit when a new part of code is fully implemented you'd want to make the commit after the change to the HTML and CSS has been updated and the new addition is working properly.
+
+How might using version control make you more confident to make changes that could break something?
+
+Using version control makes fixing changes that break parts of the code easy.  We can go back, investigate what exactly was removed or added so that we can isolate just what has caused the code to break.  This makes repairing misteps easier and gives us the freedom to try things out without worrying if we might undo all of our hard work from before.
