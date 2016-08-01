@@ -6,3 +6,31 @@ It allows you to control what is added to a commit.
 A working directory shows you what is in your repository as well as what is in the staging area and will therefore be submitted on the next comit.
 
 The repository is your collection of commits.
+
+'git add' Adds a file to the staging area
+'git commit' updates the repository with the commit and let's you write a commit note
+'git status' Let's you know what is in the staging area, what is commited.
+'git diff' shows you the difference between what is in the staging area and the code you have neither commited or staged
+'git diff --staged' shows you the difference between what you have staged and what was in your last commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches allow you to tackle parts of the project that may be offshoots of the main.  Perhaps experimental features, or different versions that may eventually be merged.
+'git branch' without an argument shows you which branch you are in by placing a '*' next to the name
+'git branch "branch_Name"' will create a new branch you can then checkout and make changes to without effecting the master branch.
+
+How do the diagrams help you visualize the branch structure?
+The diagrams show if you checkout earlier commits and work on them without creating a new branch you can creat a commit that will be lost unless you know the commit ID as it will not show up in git log because git log shows only the parents of a certain commit.
+An offshoot that isn't turned into a branch is in a 'Detached Head State' meaning that it isn't part of the linear branch that makes up the chain.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result of merging two branches together is to combine all of the changes made, usually into the master branch.  This allows collaboration and the ability to work on multiple different features at once.
+
+'git merge "branch name" "master"' will merge the branch named into the master.  Ofcourse you could merge a branch with a non master branch but in general this is what you want to be doing.
+
+'git log n-1' will only log the most recent commit but you can change this to the number you need.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging saves time from adding code, it should require less tweaking to get it working for most changes where only minor conflicts are present.
+
+For larger changes automatic merging may overwrite entire important pieces of code and it may be preferable to update these manually.
