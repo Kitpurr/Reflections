@@ -1,1 +1,19 @@
+'git remote' Shows what remotes you have
+'git remote -v' -v stands for Verbose, give you more data about your remotes
+'git remote add [name of remote] [git hub repository url]' This creates a remote connection to your git hub repository.  The most common name for the remote if you only have one is origin.
+'git push [name of remote][branch]' pushes the data from one branch in your repository to your remote on github
+'git pull [name of remote][branch]' pulls the data from one branch in your repository to your remote on github
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	If you push the files from your local repository to github too soon you may be uploading them before they actually work, causing confusion with collaborators.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+	
+	A Fork is like a branch of someone elses repository that also allows for branches inside it.  You clone their repository which also has  link back to their original work.  Once you pull that fork your remote will be set to the fork rather than the original persons remote repository.
+
+	A clone copies an entire repository, however it doesn't fairly credit the original creator, it's remote will also be set to the original creators repository.
+
+	A branch is like a fork that allows for two different versions of content to be available at the same time.  This allows you to bug fix and provide minor updates to a 'master' working version while simultaneously working on new features or experimental design in a branch.
+
 
