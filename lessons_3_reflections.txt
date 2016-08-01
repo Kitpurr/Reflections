@@ -1,8 +1,9 @@
 'git remote' Shows what remotes you have
 'git remote -v' -v stands for Verbose, give you more data about your remotes
 'git remote add [name of remote] [git hub repository url]' This creates a remote connection to your git hub repository.  The most common name for the remote if you only have one is origin.
-'git push [name of remote][branch]' pushes the data from one branch in your repository to your remote on github
-'git pull [name of remote][branch]' pulls the data from one branch in your repository to your remote on github
+'git push [name of remote][name of branch]' pushes the data from one branch in your repository to your remote on github
+'git pull [name of remote][name of branch]' pulls the data from one branch in your repository to your remote on github
+'git fetch [name of remote][name of branch]' updates the state of the remote stored locally.  you can then use 'git merge' and git push to bring your local repo and remote up to date.
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
@@ -16,4 +17,11 @@ Describe the differences between forks, clones, and branches. When would you use
 
 	A branch is like a fork that allows for two different versions of content to be available at the same time.  This allows you to bug fix and provide minor updates to a 'master' working version while simultaneously working on new features or experimental design in a branch.
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
+	The benefit of having the last known state of the remote stored locally is you can see if you're ahead or behind of the remote repo and also so you can merge changes that aren't linear to your local commit log.
 
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	We would have to send and recieve files and update them by hand.  Most things would be harder to do as you have no way of tracking the changes or you have to do it all by hand, like version 1.1 and then a file that comments on what those changes are.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	Making changes in a seperate branch allows you to push those changes to github without overriding the master and allows those changes to be reviewed by your collaborators before being merged with the master branch.  However it can become tricky simply because other branches can be uploaded at the same time which may not yet have been merged with the master and will create several merges that need to be processed.  However keeping them in seperate branches means the merges can be processed in the most logical manner possible which means that you are less likely to break your code.
